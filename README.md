@@ -12,7 +12,7 @@
 
 在企业数据管理中，**企业简称的规范化**一直是一个痛点问题：
 
-- 启信宝、天眼查等平台导出的企业名称存在大量**脏数据**
+- 企业查询平台导出的企业名称存在大量**脏数据**
 - 地域前缀混乱（省、市、区/县、乡镇）
 - 组织形式后缀冗余（有限公司、工作室、个体工商户等）
 - 同类企业简称不统一，无法精准检索
@@ -155,6 +155,17 @@ graph TD
 
 ### 安装
 
+**方式一：通过 Claude Code 直接安装**
+
+1. 打开 Claude Code
+2. 使用 Skill 工具安装：
+   ```
+   /skill company-short-name
+   ```
+   或在设置中搜索并安装
+
+**方式二：下载安装**
+
 1. 下载本仓库的 `.skill` 文件
 2. 打开 Claude Code 设置 → Skills
 3. 点击 **Install from file**
@@ -204,7 +215,7 @@ graph TD
 
 ```
 company-short-name/
-├── company-name-cleaner.skill    # 🎯 Claude Code Skill 安装包
+├── company-short-name.skill    # 🎯 Claude Code Skill 安装包
 ├── references/
 │   ├── 后缀词库.md              # 📋 需剔除的后缀词库（90+后缀类型）
 │   └── 行业词库.md             # 📋 需保留的行业词库（19大类）
